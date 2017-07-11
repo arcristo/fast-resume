@@ -1,0 +1,13 @@
+# symfony
+/app/config/parameters.yml
+/phpunit.xml
+/var/*
+/vendor/
+
+# phpstorm
+.idea/*.iws
+.idea/tasks.xml
+.idea/workspace.xml
+
+# keep
+!*.gitkeep

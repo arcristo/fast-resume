@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+. "./check-env"
+
+echo "Building docker images for ${project_name^^} project..."
+cd ..
+docker-compose \
+    build "$@"

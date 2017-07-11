@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+. "./init-script"
+
+echo "Running symfony console for ${project_name^^} project..."
+docker exec \
+    -it \
+    ${project_name}_php_1 ./bin/console "$@"

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+. "./init-script"
+
+echo "Running bash-nginx for ${project_name^^} project..."
+docker exec \
+    -it \
+    ${project_name}_nginx_1 bash "$@"

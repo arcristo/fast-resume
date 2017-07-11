@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+. "./init-script"
+
+echo "Stopping docker services for ${project_name^^} project..."
+cd ..
+docker-compose \
+    -p ${project_name} \
+    down "$@"
