@@ -23,7 +23,8 @@
         "symfony/validator": "^3.3"
     },
     "autoload": {
-        "psr-0": { "": "app/" }
+        "psr-0": { "": "app/" },
+        "files": ["app/paths.php"]
     },
     "extra": {
         "branch-alias": {
