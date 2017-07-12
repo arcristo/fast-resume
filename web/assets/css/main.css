@@ -1,0 +1,9 @@
+html, body, #wrapper, #container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.content {
+    height: 100%;
+}

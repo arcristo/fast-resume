@@ -1,5 +1,4 @@
-# symfony
-/app/config/parameters.yml
+# app
 /phpunit.xml
 /var/*
 /vendor/
