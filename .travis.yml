@@ -1,0 +1,23 @@
+language: php
+sudo: false
+
+branches:
+  only:
+    - master
+    - develop
+
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
+php:
+  - "7.1"
+
+before_install:
+  - .deploy/travis/check-env
+
+install:
+  - composer install
+
+script:
+  - vendor/bin/phpunit
