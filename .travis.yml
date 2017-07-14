@@ -8,7 +8,7 @@ branches:
 
 cache:
   directories:
-    - $HOME/.composer/cache/files
+    - ${HOME}/.composer/cache/files
 
 php:
   - "7.1"
@@ -21,3 +21,8 @@ install:
 
 script:
   - vendor/bin/phpunit
+
+deploy:
+  provider: heroku
+  api_key: ${FASTRESUME_API_HEROKU}
+  on: master
