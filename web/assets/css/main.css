@@ -7,3 +7,7 @@ html, body, #wrapper, #container {
 div.content {
     height: 100%;
 }
+
+.card-profile {
+    margin: 20px;
+}
