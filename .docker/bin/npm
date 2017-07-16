@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+. "./init-script"
+
+echo "Running npm for ${project_name^^} project..."
+docker run \
+    -it \
+    --rm \
+    --name npm \
+    -v ${PWD}/../../frontend:/root/fastresume/frontend \
+    fastresume_node npm "$@"

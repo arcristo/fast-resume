@@ -14,7 +14,7 @@ services:
         image: fastresume_php
         build:
             context: ./
-            dockerfile: ./services/php/dockerfile
+            dockerfile: ./services/php/Dockerfile
             args:
                 FASTRESUME_DEPLOY_ENV: ${FASTRESUME_DEPLOY_ENV}
                 FASTRESUME_SYSTEM_USER_PHP: ${FASTRESUME_SYSTEM_USER_PHP}
@@ -32,3 +32,14 @@ services:
         environment:
             FASTRESUME_DEPLOY_ENV: ${FASTRESUME_DEPLOY_ENV}
             PHP_IDE_CONFIG: "serverName=docker"
+
+    node:
+        image: fastresume_node
+        build:
+            context: ./
+            dockerfile: ./services/node/Dockerfile
+        restart: always
+        ports:
+            - "3000:3000"
+        volumes:
+            - ../frontend:/root/fastresume/frontend

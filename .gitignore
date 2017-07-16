@@ -3,6 +3,10 @@
 /var/*
 /vendor/
 
+# frontend
+jest
+node_modules
+
 # phpstorm
 .idea/*.iws
 .idea/tasks.xml

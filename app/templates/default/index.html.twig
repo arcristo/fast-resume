@@ -4,39 +4,7 @@
 
 {% block content %}
     <h1>FAST RESUME</h1>
-    <div>
+    <div id="app">
 
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <div class="card">
-                    <div class="card-block card-profile">
-                        <div class="card-text">
-                            <form action="#" method="post">
-                                {{ form_start(form) }}
-                                {{ form_errors(form) }}
-
-                                <div class="row">
-                                    <div>
-                                        {{ form_label(form.user, null, {
-                                            'label': 'https://www.linkedin.com/in/'
-                                        }) }}
-                                    </div>
-                                    <div>
-                                        {{ form_widget(form.user) }}
-                                    </div>
-                                </div>
-
-                                {{ form_row(form.submit, {'attr': {
-                                    'class': 'btn btn-primary'
-                                }}) }}
-                                {{ form_end(form) }}
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
     </div>
 {% endblock %}
