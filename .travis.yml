@@ -14,7 +14,8 @@ php:
   - "7.1"
 
 before_install:
-  - .deploy/travis/check-env
+  - .deploy/travis/check-env.sh
+  - .deploy/travis/install-yarn.sh
 
 install:
   - composer install
