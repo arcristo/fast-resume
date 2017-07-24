@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. "./init-script.sh"
+. "./deploy/travis/init-script.sh"
 
 echo "Installing yarn and dependencies..."
 

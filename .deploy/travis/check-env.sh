@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. "./init-script.sh"
+. "./deploy/travis/init-script.sh"
 
 echo "Checking environment for ${project_name^^} project..."
 
