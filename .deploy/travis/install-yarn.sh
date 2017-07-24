@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# Exit on error
-set -e
-set -o pipefail
+. "./init-script.sh"
+
+echo "Installing yarn and dependencies..."
 
 # Install node
-curl -sSL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sS https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # Install yarn

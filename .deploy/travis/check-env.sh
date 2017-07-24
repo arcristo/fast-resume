@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-# Exit on error
-set -e
-set -o pipefail
-
-project_name="fastresume"
+. "./init-script.sh"
 
 echo "Checking environment for ${project_name^^} project..."
 
