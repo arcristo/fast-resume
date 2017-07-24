@@ -5,7 +5,7 @@
 echo "Installing yarn and dependencies..."
 
 # Install node
-curl -sSN https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sSL --buffer https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # Install yarn
