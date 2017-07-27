@@ -1,6 +1,5 @@
 language: php
-dist: trusty
-sudo: false
+sudo: required
 
 branches:
   only:
@@ -16,6 +15,7 @@ php:
 
 before_install:
   - .deploy/travis/check-env.sh
+  - .deploy/travis/update-apt.sh
   - .deploy/travis/install-yarn.sh
 
 install:
